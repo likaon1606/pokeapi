@@ -15,7 +15,7 @@ const Pokedex = () => {
 
 
   const [ page, setPage ] = useState(1)
-  const itemsNumber = 9
+  const itemsNumber = 16
   const lastIndex = page * itemsNumber
   const firstIndex = lastIndex - itemsNumber
   const pokemonsPage = pokemons?.slice(firstIndex, lastIndex)
@@ -47,9 +47,9 @@ const Pokedex = () => {
   
 
   return (
-    <div>Pokedex
+    <div className='pokedex'>
       
-      <p className="welcome-message">Welcome {userName}</p>
+      <p className="welcome-message">Welcome pokemon master {userName}</p>
 
       <div className="select">
         <select onChange={handleType}>
@@ -67,42 +67,48 @@ const Pokedex = () => {
         <label htmlFor="pokemon-name">Search Name </label>
         <input
           type="text"
+          placeholder="Write pokemon name"
           id="pokemon-name"
           value={pokemonName}
           onChange={(e) => setPokemonName(e.target.value)}
         />
-        <button>Search</button>
-      </form>    
-      <ul className="pokemon-list">
+        <button className='btn-go'>GO</button>
+      </form>
+
+      <div className='container-list'>
         {pokemonsPage.map(pokemon => (
           <PokemonCard 
           pokemonUrl={pokemon.pokemon?.url ? pokemon.pokemon?.url : pokemon.url} 
           key={pokemon.pokemon?.url ? pokemon.pokemon?.url : pokemon.url} 
           />
         ))}
-        
-      </ul>
-
-      <div>
-        {numberPages.map(page => 
-          <button
-            key={page} 
-            onClick={()=> setPage(page + 1)}>
-            {page}
-          </button>)}
       </div>
 
-      <button 
-        onClick={() => setPage(page - 1)}
-        disabled={page <= 1}>
-        Previous
-      </button>
-      
-      <button 
-        onClick={() => setPage(page + 1)}
-        disabled={page >= totalPages}>
-        Next
-      </button>
+      <div className='buttons'>
+          <button
+            className='btn-previous'
+            onClick={() => setPage(page - 1)}
+            disabled={page <= 1}>
+            Previous
+          </button>
+          
+          <button
+            className='btn-next'
+            onClick={() => setPage(page + 1)}
+            disabled={page >= totalPages}>
+            Next
+          </button>
+        </div>
+
+        <div className='pages'>
+          {numberPages.map(page => 
+            <button
+              className='btn-pages'
+              key={page} 
+              onClick={()=> setPage(page + 1)}>
+              {page}
+            </button>)}
+      </div>
     </div>
   )
 }

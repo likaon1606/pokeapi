@@ -14,14 +14,15 @@ const PokemonCard = ({pokemonUrl}) => {
     //console.log(pokemonUrl)
 
   return (
-    
-    <ul>
-      <Link to={`/pokedex/${pokemon.id}`}>
-        <li>Name: {pokemon.name}</li>
-        <li><img src={pokemon.sprites?.other.dream_world.front_default} alt="" /></li>
-        
-      </Link>
-    </ul>
+    <div className='pokelist'>
+      <div className='pokemon-card'>
+        <Link to={`/pokedex/${pokemon.id}`}>
+          <h5>Name: {pokemon.name}</h5>
+          <img src={pokemon.sprites?.other.dream_world.front_default} alt="" />
+          
+        </Link>
+      </div>
+    </div>
   )
 }
 

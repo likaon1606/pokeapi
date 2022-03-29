@@ -21,13 +21,23 @@ const Login = () => {
     }
 
   return (
-    <div>
+    <div className='background-login'>
+      <div className='container-title'>
+       
+      </div>
+      <div className='container-subtitle'>
+       
+      </div>
+    <div className='login-form'>
         <form action="" onSubmit={submit}>
-            <input  type="text" 
-                    value={userName} 
-                    onChange={e => setUserName(e.target.value)}/>
+            <input  
+            type="text"
+            placeholder="Enter your name master" 
+            value={userName} 
+            onChange={e => setUserName(e.target.value)}/>
             <button>Submit</button>    
-        </form>    
+        </form>
+        </div>      
     </div>
   )
 }
