@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Qahiri&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&family=Qahiri&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*-------------------------LOGIN----------------------------*/
+.background-login{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://c.tenor.com/ZjrXRjyFr3cAAAAd/ash-pokemon-ash.gif");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding: 20px;
+}
+
+.container-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/poketitle.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 120px;
+  background-position: center;
+}
+
+.container-subtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/pokesubtitle.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+  background-position: center;
+  
+}
+
+.login-form{
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+ 
+}
+
+.login-form input{
+  width: 55vw;
+  height: 45px;
+  border: 1px solid black;
+  box-shadow: 1px 2px 4px rgb(0,0,0,.3);
+  background-color: transparent;
+  transition: 300ms;
+}
+.login-form button{
+  width: 100px;
+  height: 45px;
+  border: 1px solid black;  
+  box-shadow: 1px 2px 4px rgb(0,0,0,.3);
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #D53624;
+  opacity: .8;
+  color: yellow;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.login-form input[placeholder]{
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px;
+}
+
+.login-form input:hover{
+  background-color: yellow;
+}
+
+.login-form button:active{
+  background-color: maroon;
+}
+
+
+/*-------------------------POKEDEX----------------------------*/
+
+.pokedex{
+  padding: 10px;
+  background-image: url("https://i.pinimg.com/originals/90/4a/74/904a747dcf65450b8e9cb89eba6180fe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.welcome-message{
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 800;
+  font-size: 40px;
+  padding: 10px;
+  color: yellow;
+  text-shadow: 1px 2px 4px rgb(0,0,0,.3);
+}
+
+.select{
+  text-align: center;
+ 
+}
+
+.select select{
+  height: 30px;
+  width: 90px;
+  box-shadow: 1px 2px 4px rgb(0,0,0,.3)
+}
+
+
+.input-container{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.container-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: first baseline;
+}
+
+ .pokemon-list{
+  list-style: none; 
+} 
+
+.input-container{
+  width: 90vw;
+}
+
+.input-container label{
+  font-size: 20px;
+  text-shadow: 1px 2px 4px rgb(0,0,0,.3);
+}
+
+.input-container input{
+  width: 45vw;
+  height: 45px;
+  border: 1px solid black;
+  box-shadow: 1px 2px 4px rgb(0,0,0,.3);
+  background-color: #FFFF;
+  opacity: .7;
+  transition: 300ms;
+}
+
+.btn-go{
+  width: 100px;
+  height: 45px;
+  border: 1px solid black;  
+  box-shadow: 1px 2px 4px rgb(0,0,0,.3);
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #D53624;
+  opacity: .8;
+  color: yellow;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.input-container input[placeholder]{
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px;
+}
+
+.input-container input:hover{
+  background-color: yellow;
+}
+
+.input-container button:active{
+  background-color: maroon;
+}
+/*-----------------------POKEMON-CARD--------------------------*/
+
+.pokelist{
+  padding: 10px;
+  width: 160px;
+}
+
+.card-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  height: 160px;
+  background-image: url("https://i.gifer.com/EAoe.gif");
+  border-radius: 20px;
+  align-items: center;
+  margin: 10px;
+}
+
+.pokemon-card{ 
+  list-style: none;
+}
+
+.pokename{
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.pokemon-card img{
+  width: 80px;
+}
+
+
+
+
+/*-----------------------POKEMON-INFO-------------------------*/
+.pokemon-info{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://w0.peakpx.com/wallpaper/962/259/HD-wallpaper-pokemon-pokeball-green-simple-pokemon-green-pokeball.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  text-align: center;
+  height: 100vh;
+}
+
+.card-title{
+  width: 80vw;
+  height: 10vh;
+  background-image: url("./assets/pokemoncard.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.card-element{
+  margin-top: 10px;
+  width: 340px;
+  height: 600px;
+  background-image: url("https://i.gifer.com/EAoe.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .9;
+  border: 3px solid rgba(0,0,0,.6);
+  box-shadow: 2px 4px 6px 8px rgb(0,0,0,.3);
+  border-radius: 15px;
+}
+
+.pokemon-info h2{
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-shadow: 2px 4px rgb(0,0,0,.3);
+}
+
+.pokemon-info img{
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.pokemon-info li{
+  font-size: 30px;
+  font-family: 'Patrick Hand', cursive;
+  list-style: none;
+  text-align: left;
+  margin-left: 50px;
+  text-shadow: 2px 4px rgb(0,0,0,.3);
+}
+
+.btn-return{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.return-link{
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  width: 100px;
+  height: 50px;
+  background-color: #0059FF;
+  border: 1px solid #0059FF;  
+  box-shadow: 1px 2px 4px 4px rgb(0,0,0,.5);
+  opacity: .8;
+  color: yellow;
+  transition: 300ms;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.return-link button:hover{
+  background-color: #140CC8;
+}
+
+.return-link button:active{
+  background-color: #140CC8;
+}
+
+
+
+
+
+@media screen and (min-width: 762px){
+  
+  .card-element{
+    width: 400px;
+    height: 700px;
+    background-color: aliceblue;
+    border: 3px solid rgba(0,0,0,.6);
+    box-shadow: 2px 4px 6px 8px rgb(0,0,0,.3);
+    border-radius: 15px;
+  }
+
+  .pokemon-info h2{
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  .pokemon-info li{
+    font-size: 40px;
+    font-family: 'Patrick Hand', cursive;
+    list-style: none;
+    text-align: left;
+    margin-left: 40px;
+  }
+}
