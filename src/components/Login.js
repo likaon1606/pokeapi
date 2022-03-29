@@ -23,7 +23,7 @@ const Login = () => {
   return (
     <div className='background-login'>
       <div className='container-title'>
-       
+       <h1 className='copyright'>Copyright By Ariel Fuentes García and Carlos Eduardo Rodríguez</h1>
       </div>
       <div className='container-subtitle'>
        
