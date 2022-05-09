@@ -10,15 +10,15 @@ const PokemonCard = ({pokemonUrl}) => {
       axios.get(pokemonUrl)
         .then(res => setPokemon(res.data))
     }, [pokemonUrl])
-      
-    //console.log(pokemonUrl)
 
+// const changeColors = pokemon?.types[0].type?.name;
+// console.log(changeColors)
   return (
     <div className='pokelist'>
       <div className='pokemon-card'>
         <Link to={`/pokedex/${pokemon.id}`}>
           <h5>Name: {pokemon.name}</h5>
-          <img src={pokemon.sprites?.other.dream_world.front_default} alt="" />
+          <img src={pokemon.sprites?.other.dream_world.front_default} alt=""/>
           
         </Link>
       </div>

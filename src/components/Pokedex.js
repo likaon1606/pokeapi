@@ -71,7 +71,7 @@ const Pokedex = () => {
 
       <div className="container-list">
         {pokemonsPage.map((pokemon) => (
-          <PokemonCard
+          <PokemonCard 
             pokemonUrl={
               pokemon.pokemon?.url ? pokemon.pokemon?.url : pokemon.url
             }
