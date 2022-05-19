@@ -360,7 +360,6 @@
 .pokemon-info h2 {
   font-family: "Indie Flower", cursive;
   font-size: 50px;
-
   margin-bottom: 20px;
   text-shadow: 2px 4px rgb(0, 0, 0, 0.3);
 }
@@ -455,14 +454,14 @@
   }
  .input-container label{
    visibility: hidden;
-   margin-left: -40%;
+   margin-left: -35%;
  }
  .input-container input, button{
    margin-top: 20px;
    border-radius: 10px;
  }
  .container-list{
-   margin-left: -10%;
+   margin-left: -7.5%;
  }
 .pokelist{
   height: 100px;
@@ -470,14 +469,38 @@
 }
 .pokemon-card h5{
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: -5px;
 }
 .pokemon-card img{
   width: 60px;
   height: 50px;
   margin-left: 70px;
 }
- 
-
-
+ .btn-pages{
+   visibility: hidden;
+   margin: 0;
+   padding: 0;
+ }
+.btn-previous, .btn-next{
+  width: 90px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 220px;
+  font-weight: 700;
+}
+/* .card-title{
+  width: 10px;
+  height: 10px;
+} */
+.card-element{
+  width: 270px;
+  height: 450px;
+  margin-top: 20px;
+}
+.pokemon-info img{
+  width: 150px;
+}
+.pokemon-info li{
+  font-size: 25px;
+}
   }
