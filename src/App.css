@@ -34,7 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("assets/pokesubtitle.jpg");
+  background-image: url("assets/pokesubtitle.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
@@ -255,13 +255,15 @@
   justify-content: center;
   align-items: center;
   margin: 40px 0 0 40px;
-  /* background-image: url("https://i.gifer.com/EAoe.gif"); */
+  background-image: url("https://i.gifer.com/EAoe.gif");
   border-radius: 20px;
   box-shadow: 1px 2px 4px 4px black;
   height: 200px;
 }
+
+
 /*-----------------------------CHANGE-COLORS-------------------------------------*/
-.rock {
+/* .rock {
   background-color: rgb(148, 81, 81);
 }
 .ghost {
@@ -290,7 +292,7 @@
 }
 .water {
   background-color:#E0F1FD;
-}
+} */
 
 .pokemon-card h5 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -415,39 +417,67 @@
   color: #0059ff;
   text-align: center;
 }
-
-@media screen and (max-width: 762px) {
+/*--------------------RESPONSIVE DESIGN------------------*/
+@media only screen and (min-width:320px) and (max-width:480px){
   .copyright {
-    margin-left: 5%;
-    margin-top: 90%;
+    margin-left: -5%;
+    margin-top: 220%;
   }
-  .pokelist {
-    margin: 30px 10px 0 -10px;
+  .container-title{
+    margin-left: -10px;
   }
-  .buttons {
-    margin-top: 950px;
+  .container-subtitle{
+    margin-left: -30px;
   }
- .pages{
+  .login-form{
+    margin-left: 30px;
+  }
+  .login-form input{
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .login-form button{
+    border-radius: 10px;
+    margin-left: 50px;  
+    margin-top: 10px;
+  }
+  .select select{
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-align: center;
+    background: #d53624 ;
+    color: yellow;
+    opacity: 0.8;
+    font-size: 18px;
+    margin-left: -10%;
+    margin-top: 20px;
+  }
+ .input-container label{
    visibility: hidden;
+   margin-left: -40%;
  }
+ .input-container input, button{
+   margin-top: 20px;
+   border-radius: 10px;
+ }
+ .container-list{
+   margin-left: -10%;
+ }
+.pokelist{
+  height: 100px;
+  width: 100px;
+}
+.pokemon-card h5{
+  font-size: 15px;
+  margin-top: 10px;
+}
+.pokemon-card img{
+  width: 60px;
+  height: 50px;
+  margin-left: 70px;
+}
+ 
 
 
-.card-element {
-  height: 500px;
-  margin-top: 80px;
-}
-
-.pokemon-info h2 {
-  font-family: "Indie Flower", cursive;
-  font-size: 40px;
-}
-
-
-.pokemon-info li {
-  font-size: 25px;
-}
-.card-title {
-  margin-top: -580px;
-  width: 50vh;
-}
-}
+  }

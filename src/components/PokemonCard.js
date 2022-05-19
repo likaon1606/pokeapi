@@ -17,7 +17,7 @@ const PokemonCard = ({pokemonUrl}) => {
     <div className='pokelist'>
       <div className='pokemon-card'>
         <Link to={`/pokedex/${pokemon.id}`}>
-          <h5>Name: {pokemon.name}</h5>
+          <h5>{pokemon.name}</h5>
           <img src={pokemon.sprites?.other.dream_world.front_default} alt=""/>
           
         </Link>
